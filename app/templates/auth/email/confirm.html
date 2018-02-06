@@ -1,0 +1,9 @@
+<meta charset="utf-8">
+<p>你好 {{ user.username }},</p>
+<p>欢迎来到 <b>Flasky</b>!</p>
+<p>请点击以确认<a href="{{ url_for('auth.confirm', token=token, _external=True) }}">click here</a>.</p>
+<p>或者，您可以粘贴到浏览器的地址栏中键入以下链接:</p>
+<p>{{ url_for('auth.confirm', token=token, _external=True) }}</p>
+<p>祝好,</p>
+<p>Flasky 团队</p>
+<p><small>注意：此邮件不需要回复</small></p>
